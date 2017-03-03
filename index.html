@@ -1,125 +1,166 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-#doc {position: absolute; left: 25%; margin-left: -335px;height: 89%; width: 671px; z-index: -1; resize:horizontal;}
-body {font-family: "Source Code Pro";}
-</style>
-        <link href="dropdown.css" rel="stylesheet">
-        <link href="/fonts/SourceCodePro.css" rel="stylesheet">
-        <script src="notescript.js"></script>
-    </head>
-    <body>
-        <nav id="nav02">
-    </nav>
-    
-    <img id="home" src="Home_tango.png" onclick="location.replace('http://cadenkeese.com')">
-<div class="dropdown">
-  <button class="dropbtn">CH 2</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(2.1);">2.1<span class="tooltiptextright">Limits Continuity</span></a>
-    <a href="#" class="tooltip" onclick="select(2.2);">2.2<span class="tooltiptextright">Limits Involving Infinity</span></a>
-    <a href="#" class="tooltip" onclick="select(2.3);">2.3<span class="tooltiptextright">Continuity</span></a>
-    <a href="#" class="tooltip" onclick="select(2.4);">2.4<span class="tooltiptextright">Slope, Derivative And Tangent To A Curve</span></a>
-    <a href="#" class="tooltip" onclick="select(2.5);">2.5<span class="tooltiptextright">Finding The Derivative (Slope Function)</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 3</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(3.2);">3.2<span class="tooltiptextright">Differentiability</span></a>
-    <a href="#" class="tooltip" onclick="select(3.3);">3.3<span class="tooltiptextright">Differentiation Rules </span></a>
-    <a href="#" class="tooltip" onclick="select(3.4);">3.4<span class="tooltiptextright">Velocity, Speed And Other Rates Of Change</span></a>
-    <a href="#" class="tooltip" onclick="select(3.5);">3.5<span class="tooltiptextright">Derivatives Of Trig Functions</span></a>
-    <a href="#" class="tooltip" onclick="select(3.6);">3.6<span class="tooltiptextright">Chain Rule</span></a>
-    <a href="#" class="tooltip" onclick="select(3.7);">3.7<span class="tooltiptextright">Implicit Derivative</span></a>
-    <a href="#" class="tooltip" onclick="select(3.8);">3.8<span class="tooltiptextright">Inverse Trig Derivatives</span></a>
-    <a href="#" class="tooltip" onclick="select(3.9);">3.9<span class="tooltiptextright">Natural Logarithms</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 4</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(4.0);">4.0<span class="tooltiptextright">Derivatives Of Exponentials</span></a>
-    <a href="#" class="tooltip" onclick="select(4.1);">4.1<span class="tooltiptextright">Extrema And The Mean Value Theorem</span></a>
-    <a href="#" class="tooltip" onclick="select(4.2);">4.2<span class="tooltiptextright">Mean Value Theorem</span></a>
-    <a href="#" class="tooltip" onclick="select(4.3);">4.3<span class="tooltiptextright">Connecting f(x), f’(x), f”(x)</span></a>
-    <a href="#" class="tooltip" onclick="select(4.4);">4.4<span class="tooltiptextright">Modeling, Optimization</span></a>
-    <a href="#" class="tooltip" onclick="select(4.5);">4.5<span class="tooltiptextright">Linear Approximations</span></a>
-    <a href="#" class="tooltip" onclick="select(4.6);">4.6<span class="tooltiptextright">Related Rates</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 5</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(5.2);">5.2<span class="tooltiptextright">Calculus And Area</span></a>
-    <a href="#" class="tooltip" onclick="select(5.3);">5.3<span class="tooltiptextright">Definite Integral Rules</span></a>
-    <a href="#" class="tooltip" onclick="select(5.4);">5.4<span class="tooltiptextright">Fundamental Theorem Of Calculus</span></a>
-    <a href="#" class="tooltip" onclick="select(5.5);">5.5<span class="tooltiptextright">Trapezoid Rule</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 6</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(6.1);">6.1<span class="tooltiptextleft">Anti Derivatives</span></a>
-    <a href="#" class="tooltip" onclick="select(6.2);">6.2<span class="tooltiptextleft">Integration By Substitution</span></a>
-    <a href="#" class="tooltip" onclick="select(6.3);">6.3<span class="tooltiptextleft">Integration By Parts</span></a>
-    <a href="#" class="tooltip" onclick="select(6.4);">6.4<span class="tooltiptextleft">Decay Equation</span></a>
-    <a href="#" class="tooltip" onclick="select(6.5);">6.5<span class="tooltiptextleft">Population Growth</span></a>
-    <a href="#" class="tooltip" onclick="select(6.6);">6.6<span class="tooltiptextleft">Euler's Method</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 7</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(7.1);">7.1<span class="tooltiptextleft">Integral As Net Change</span></a>
-    <a href="#" class="tooltip" onclick="select(7.2);">7.2<span class="tooltiptextleft">Area Between Curves</span></a>
-    <a href="#" class="tooltip" onclick="select(7.3);">7.3<span class="tooltiptextleft">Volumes Of Solids Of Revolution</span></a>
-    <a href="#" class="tooltip" onclick="select(7.4);">7.4<span class="tooltiptextleft">Curve Length</span></a>
-    <a href="#" class="tooltip" onclick="select(7.5);">7.5<span class="tooltiptextleft">Work(J)</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 8</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(8.1);">8.1<span class="tooltiptextleft">Indeterminate Forms And L'Hoptal's Rule</span></a>
-    <a href="#" class="tooltip" onclick="select(8.2);">8.2<span class="tooltiptextleft">The Rates At Which Functions Grow</span></a>
-    <a href="#" class="tooltip" onclick="select(8.3);">8.3<span class="tooltiptextleft">Improper Integrals (Integrals Involving Infinity Or Undefined)</span></a>
-    <a href="#" class="tooltip" onclick="select(8.4);">8.4<span class="tooltiptextleft">Partial Fractions</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 9</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(9.1);">9.1<span class="tooltiptextleft">Series Notation</span></a>
-    <a href="#" class="tooltip" onclick="select(9.2);">9.2<span class="tooltiptextleft">Taylor Series</span></a>
-    <a href="#" class="tooltip" onclick="select(9.3);">9.3<span class="tooltiptextleft">Remainder Estimate Theorem</span></a>
-    <a href="#" class="tooltip" onclick="select(9.4);">9.4<span class="tooltiptextleft">Radius Of Convergence</span></a>
-  </div>
-</div>
-        
-<div class="dropdown">
-  <button class="dropbtn">CH 10</button>
-  <div class="dropdown-content">
-    <a href="#" class="tooltip" onclick="select(10.1);">10.1<span class="tooltiptextleft">Parametric Functions</span></a>
-    <a href="#" class="tooltip" onclick="select(10.2);">10.2<span class="tooltiptextleft">Vectors</span></a>
-    <a href="#" class="tooltip" onclick="select(10.3);">10.3<span class="tooltiptextleft">Vector Valued Functions</span></a>
-    <a href="#" class="tooltip" onclick="select(10.4);">10.4<span class="tooltiptextleft">Projectile Motion</span></a>
-    <a href="#" class="tooltip" onclick="select(10.5);">10.5<span class="tooltiptextleft">Polar Coordinates</span></a>
-    <a href="#" class="tooltip" onclick="select(10.6);">10.6<span class="tooltiptextleft">Area Computation In Polar Coordinates</span></a>
-  </div>
+<!--
+	Created by Caden Keese 
+
+	updated Friday Oct 7, 2016
+
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Garrison&apos;s Calculus Notes</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-S7YMK1xjUjSpEnF4P8hPUcgjXYLZKK3fQW1j5ObLSl787II9p8RO9XUGehRmKsxd" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+    <style>
+        /*.maincont {
+            margin-top: 1%;
+        }*/
+        .maincont img {
+            height:75%;
+            width:75%;
+        }
+
+        .embedDiv, embed {
+            height: 100%;
+            width: 100%;
+            /*margin-left: 10%;*/
+            /*margin-top: 10%;*/
+        }
+
+        .modal-content {
+            height: 95%;
+        }
+
+        .modal-lg {
+            height: 95%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Garrison&apos;s Calculus notes</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+            <ul class="nav navbar-nav">
+
+                <li class="2_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 2 <span class="caret"></span></a>
+                    <ul id="2_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="3_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 3 <span class="caret"></span></a>
+                    <ul id="3_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="4_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 4 <span class="caret"></span></a>
+                    <ul id="4_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="5_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 5 <span class="caret"></span></a>
+                    <ul id="5_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="6_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 6 <span class="caret"></span></a>
+                    <ul id="6_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="7_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 7 <span class="caret"></span></a>
+                    <ul id="7_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="8_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 8 <span class="caret"></span></a>
+                    <ul id="8_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="9_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 9 <span class="caret"></span></a>
+                    <ul id="9_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <li class="10_x_dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">CH 10 <span class="caret"></span></a>
+                    <ul id="10_x" class="dropdown-menu">
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="navbar-form navbar-right">
+
+                <input type="text" class="form-control searchText" placeholder="Search">
+
+                <button type="button" class="btn btn-default search">Submit</button>
+
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container maincont">
+<img src="images/background.svg" class="img-responsive">
 </div>
 
 
-<div>
-    <iframe id="doc" src="sections/2.1.pdf"></iframe>
-</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="js/init.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>
+
+
+
+
